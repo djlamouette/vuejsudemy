@@ -4,10 +4,10 @@
       Quotes Added
     </h2>
     <div class="quotesBar">
-      <div class="movingBar">
+      <div class="movingBar" :style="{ width: __nbQuotes + '0%' }">
       </div>
       <div class="counter">
-        {{ quotes }}/10
+        {{ __nbQuotes }}/10
       </div>
     </div>
   </div>
@@ -17,6 +17,7 @@
 import { quotesBus } from "../main.js"
 
 export default {
+  props: ["__nbQuotes"],
   data: function() {
     return {
       quotes: 0

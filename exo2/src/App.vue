@@ -1,7 +1,7 @@
 <template>
     <div class="container">
 
-      <quotesAdded></quotesAdded>
+      <quotesAdded :__nbQuotes="quotes.length"></quotesAdded>
       <newQuote :__quotes="quotes"></newQuote>
       <quoteList :__quotes="quotes"></quoteList>
       <infos></infos>

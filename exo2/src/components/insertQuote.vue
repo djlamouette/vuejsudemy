@@ -28,11 +28,16 @@ export default {
     //   quotesBus.removeQuote()
     // }
     quoteAdd: function(event) {
-      this.__quotes.push(this.quoteInput);
-      this.quoteInput = "";
-    },
-    quoteInputCollect: function(event) {
-      this.quoteInput = event.target.value;
+      if (this.__quotes.length <= 9) {
+        if (this.quoteInput != undefined && this.quoteInput != "") {
+          this.__quotes.push(this.quoteInput);
+          this.quoteInput = "";
+        } else {
+          alert("please type some text");
+        }
+      } else {
+        alert('too many quotes');
+      }
     }
   }
 }

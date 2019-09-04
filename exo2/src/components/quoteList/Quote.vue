@@ -9,7 +9,7 @@ export default {
   methods: {
     removeQuote: function (e) {
       let index = e.currentTarget.getAttribute('data-index');
-      console.log(index);
+      // console.log(index);
       quotesBus.removeQuote(index);
     }
   }
@@ -26,5 +26,15 @@ export default {
     font-size: 20px;
     width: 31.3333%;
     margin: 1%;
+    cursor: pointer;
+    transition: 0.3s;
+    transform-origin: left top;
+  }
+
+  li:hover {
+    background-color: rgb(255, 204, 204);
+    transition: 0.3s;
+    transform: rotate(1deg);
+    transform-origin: left top;
   }
 </style>
