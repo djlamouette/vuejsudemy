@@ -7,14 +7,14 @@ export const quotesBus = new Vue({
     indexQuoteClicked: null
   },
   methods: {
-    addQuote() {
-      this.$emit('addQuotes', this.counterQuotes++);
-    },
+    // addQuote() {
+    //   this.$emit('addQuotes', this.counterQuotes++);
+    // }
 
-    removeQuote() {
-      this.$emit('removeQuotes', this.indexQuoteClicked);
-      console.log(this.indexQuoteClicked);
-    }
+    // removeQuote() {
+    //   this.$emit('removeQuotes', this.indexQuoteClicked);
+    //   console.log(this.indexQuoteClicked);
+    // }
   }
 });
 

@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
     <ul>
-      <quote v-for="(quote, index) in __quotes" :__quote="quote" :__index="index"></quote>
+      <quote v-for="(quote, index) in __quotes" :__quote="quote" :__index="index" :__quotes="__quotes"></quote>
     </ul>
   </div>
 </template>

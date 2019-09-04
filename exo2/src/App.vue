@@ -28,12 +28,12 @@
             quotes: ["quote1", "quote2", "quote3", "quote4"]
           }
         },
-        created() {
-          quotesBus.$on("removeQuotes", (index) => {
-            console.log(index);
+        // created() {
+        //   quotesBus.$on("removeQuotes", (index) => {
+        //     console.log(index);
             // this.quotes.splice(index);
-          })
-        }
+        //   })
+        // }
     }
 </script>
 

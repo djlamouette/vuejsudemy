@@ -23,14 +23,14 @@ export default {
       quotes: 0
     }
   },
-  created() {
-    quotesBus.$on("addQuotes", (status) => {
-      this.quotes = status;
-    }),
-    quotesBus.$on("removeQuotes", (status) => {
-      this.quotes = status;
-    })
-  }
+  // created() {
+  //   quotesBus.$on("addQuotes", (status) => {
+  //     this.quotes = status;
+  //   }),
+  //   quotesBus.$on("removeQuotes", (status) => {
+  //     this.quotes = status;
+  //   })
+  // }
 }
 </script>
 
